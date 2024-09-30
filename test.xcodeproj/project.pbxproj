@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B672DEC2C65C57400DB330C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B672DEB2C65C57400DB330C /* main.swift */; };
+		5B02661D2C99602D0094E205 /* 16234.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B02661C2C99602D0094E205 /* 16234.swift */; };
+		5B0266202C996F390094E205 /* 13023.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B02661F2C996F390094E205 /* 13023.swift */; };
+		5B70D3572CAAAF8C00012A25 /* 1920.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B70D3562CAAAF8C00012A25 /* 1920.swift */; };
+		5B710CC52C8EE04B00236D32 /* 9020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B710CC42C8EE04A00236D32 /* 9020.swift */; };
+		5B710CC72C8EE68D00236D32 /* 6588.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B710CC62C8EE68D00236D32 /* 6588.swift */; };
+		5B710CED2C8FC68700236D32 /* 18111.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B710CEC2C8FC68700236D32 /* 18111.swift */; };
+		5B710CEF2C91184400236D32 /* 17413.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B710CEE2C91184400236D32 /* 17413.swift */; };
+		5B710CF12C917D7700236D32 /* 14502.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B710CF02C917D7700236D32 /* 14502.swift */; };
+		5B710CF32C9189B400236D32 /* 17144.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B710CF22C9189B400236D32 /* 17144.swift */; };
+		5BAC27AD2CA1567B002686C3 /* 1916.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAC27AC2CA1567B002686C3 /* 1916.swift */; };
+		5BC45F982C8E772C00995DE5 /* 2960.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC45F972C8E772C00995DE5 /* 2960.swift */; };
+		5BC45F9A2C8E77C500995DE5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC45F992C8E77C500995DE5 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +34,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5B02661C2C99602D0094E205 /* 16234.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 16234.swift; sourceTree = "<group>"; };
+		5B02661F2C996F390094E205 /* 13023.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 13023.swift; sourceTree = "<group>"; };
 		5B672DE82C65C57400DB330C /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B672DEB2C65C57400DB330C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5B70D3562CAAAF8C00012A25 /* 1920.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1920.swift; sourceTree = "<group>"; };
+		5B710CC42C8EE04A00236D32 /* 9020.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9020.swift; sourceTree = "<group>"; };
+		5B710CC62C8EE68D00236D32 /* 6588.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 6588.swift; sourceTree = "<group>"; };
+		5B710CEC2C8FC68700236D32 /* 18111.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 18111.swift; sourceTree = "<group>"; };
+		5B710CEE2C91184400236D32 /* 17413.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17413.swift; sourceTree = "<group>"; };
+		5B710CF02C917D7700236D32 /* 14502.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14502.swift; sourceTree = "<group>"; };
+		5B710CF22C9189B400236D32 /* 17144.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17144.swift; sourceTree = "<group>"; };
+		5BAC27AC2CA1567B002686C3 /* 1916.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1916.swift; sourceTree = "<group>"; };
+		5BC45F972C8E772C00995DE5 /* 2960.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2960.swift; sourceTree = "<group>"; };
+		5BC45F992C8E77C500995DE5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,11 +60,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B02661E2C996F200094E205 /* 백트래킹 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "백트래킹";
+			path = "백트래킹";
+			sourceTree = "<group>";
+		};
 		5B672DDF2C65C57400DB330C = {
 			isa = PBXGroup;
 			children = (
-				5B672DEA2C65C57400DB330C /* test */,
+				5B70D3552CAAAF7700012A25 /* 이진탐색 */,
+				5BC45F992C8E77C500995DE5 /* main.swift */,
+				5BC45F962C8E771F00995DE5 /* 구현 */,
+				5B02661E2C996F200094E205 /* 백트래킹 */,
 				5B672DE92C65C57400DB330C /* Products */,
+				5BFEE6D92CA0EB2200579E2A /* 그래프이론 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +88,38 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5B672DEA2C65C57400DB330C /* test */ = {
+		5B70D3552CAAAF7700012A25 /* 이진탐색 */ = {
 			isa = PBXGroup;
 			children = (
-				5B672DEB2C65C57400DB330C /* main.swift */,
+				5B70D3562CAAAF8C00012A25 /* 1920.swift */,
 			);
-			path = test;
+			name = "이진탐색";
+			path = "이진탐색";
+			sourceTree = "<group>";
+		};
+		5BC45F962C8E771F00995DE5 /* 구현 */ = {
+			isa = PBXGroup;
+			children = (
+				5BC45F972C8E772C00995DE5 /* 2960.swift */,
+				5B710CC42C8EE04A00236D32 /* 9020.swift */,
+				5B710CC62C8EE68D00236D32 /* 6588.swift */,
+				5B710CEC2C8FC68700236D32 /* 18111.swift */,
+				5B710CEE2C91184400236D32 /* 17413.swift */,
+				5B710CF02C917D7700236D32 /* 14502.swift */,
+				5B710CF22C9189B400236D32 /* 17144.swift */,
+				5B02661C2C99602D0094E205 /* 16234.swift */,
+			);
+			path = "구현";
+			sourceTree = "<group>";
+		};
+		5BFEE6D92CA0EB2200579E2A /* 그래프이론 */ = {
+			isa = PBXGroup;
+			children = (
+				5B02661F2C996F390094E205 /* 13023.swift */,
+				5BAC27AC2CA1567B002686C3 /* 1916.swift */,
+			);
+			name = "그래프이론";
+			path = "그래프이론";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,7 +150,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					5B672DE72C65C57400DB330C = {
 						CreatedOnToolsVersion = 15.4;
@@ -120,7 +180,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B672DEC2C65C57400DB330C /* main.swift in Sources */,
+				5B710CC72C8EE68D00236D32 /* 6588.swift in Sources */,
+				5B70D3572CAAAF8C00012A25 /* 1920.swift in Sources */,
+				5BAC27AD2CA1567B002686C3 /* 1916.swift in Sources */,
+				5BC45F9A2C8E77C500995DE5 /* main.swift in Sources */,
+				5B02661D2C99602D0094E205 /* 16234.swift in Sources */,
+				5B710CF12C917D7700236D32 /* 14502.swift in Sources */,
+				5B710CEF2C91184400236D32 /* 17413.swift in Sources */,
+				5B710CED2C8FC68700236D32 /* 18111.swift in Sources */,
+				5B710CC52C8EE04B00236D32 /* 9020.swift in Sources */,
+				5BC45F982C8E772C00995DE5 /* 2960.swift in Sources */,
+				5B710CF32C9189B400236D32 /* 17144.swift in Sources */,
+				5B0266202C996F390094E205 /* 13023.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +232,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -224,6 +296,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -249,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = ZSF98GN32F;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -260,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = ZSF98GN32F;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
