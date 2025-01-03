@@ -1,5 +1,7 @@
 import Foundation
-func solution_19951() -> Void {
+func solution_19951() {
+    
+
     /**
      made by 라이노
      */
@@ -61,26 +63,19 @@ func solution_19951() -> Void {
             return Array(buffer[beginIndex..<(index-1)])
         }
     }
-
     let fio = FileIO()
-    let (n, m) = (fio.readInt(), fio.readInt())
-    var arr = [Int]()
-    for _ in 0 ..< n {
-        arr.append(fio.readInt())
-    }
-    var command = Array(repeating: 0, count: n)
-    var pSum = Array(repeating: 0, count: n + 1)
+    let n = fio.readInt(), m = fio.readInt()
+    var ground = (1 ... n).map { _ in fio.readInt() }
+    var pSum = [Int](repeating: 0, count: n + 1)
     for _ in 0 ..< m {
-        let (a, b, k) = (fio.readInt(), fio.readInt(), fio.readInt())
-        command[a - 1] += k
-        if b >= n { continue }
-        command[b] -= k
+        let x = fio.readInt(), y = fio.readInt(), h = fio.readInt()
+        pSum[x] += h
+        if (y != n) { pSum[y + 1] -= h }
     }
     var ans = ""
     for i in 1 ... n {
-        pSum[i] = pSum[i - 1] + command[i - 1]
-        arr[i - 1] += pSum[i]
-        ans += "\(arr[i - 1]) "
+        pSum[i] += pSum[i - 1]
+        ans += "\(ground[i - 1] + pSum[i]) "
     }
     print(ans)
 }
