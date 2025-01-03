@@ -12,6 +12,7 @@
 		5B29CF0E2CBDEBA40055EC6D /* 2023.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B29CF0D2CBDEBA40055EC6D /* 2023.swift */; };
 		5B29CF112CBDEC050055EC6D /* 16507.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B29CF102CBDEC050055EC6D /* 16507.swift */; };
 		5B37F0682CD2374A008EAEEE /* 21921.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B37F0672CD2374A008EAEEE /* 21921.swift */; };
+		5B6E51872D23DF5A00299771 /* 3020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6E51862D23DF5700299771 /* 3020.swift */; };
 		5B70D3572CAAAF8C00012A25 /* 1920.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B70D3562CAAAF8C00012A25 /* 1920.swift */; };
 		5B70D3592CAAB32400012A25 /* 2805.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B70D3582CAAB32400012A25 /* 2805.swift */; };
 		5B710CC52C8EE04B00236D32 /* 9020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B710CC42C8EE04A00236D32 /* 9020.swift */; };
@@ -52,6 +53,7 @@
 		5B29CF102CBDEC050055EC6D /* 16507.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 16507.swift; sourceTree = "<group>"; };
 		5B37F0672CD2374A008EAEEE /* 21921.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 21921.swift; sourceTree = "<group>"; };
 		5B672DE82C65C57400DB330C /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B6E51862D23DF5700299771 /* 3020.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3020.swift; sourceTree = "<group>"; };
 		5B70D3562CAAAF8C00012A25 /* 1920.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1920.swift; sourceTree = "<group>"; };
 		5B70D3582CAAB32400012A25 /* 2805.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2805.swift; sourceTree = "<group>"; };
 		5B710CC42C8EE04A00236D32 /* 9020.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9020.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		5B710CEE2C91184400236D32 /* 17413.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17413.swift; sourceTree = "<group>"; };
 		5B710CF02C917D7700236D32 /* 14502.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14502.swift; sourceTree = "<group>"; };
 		5B710CF22C9189B400236D32 /* 17144.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17144.swift; sourceTree = "<group>"; };
+		5B803B882D25878800A2BC15 /* 2839.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2839.swift; sourceTree = "<group>"; };
 		5B878AD92CC5D93100955740 /* 3273.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3273.swift; sourceTree = "<group>"; };
 		5BAC27AC2CA1567B002686C3 /* 1916.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1916.swift; sourceTree = "<group>"; };
 		5BAD09042CAE17C00018E52C /* 2343.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2343.swift; sourceTree = "<group>"; };
@@ -104,6 +107,7 @@
 		5B29CF0F2CBDEBF50055EC6D /* 누적합 */ = {
 			isa = PBXGroup;
 			children = (
+				5B6E51862D23DF5700299771 /* 3020.swift */,
 				5B29CF102CBDEC050055EC6D /* 16507.swift */,
 				5BE05D132CD39F6F008C6725 /* 13900.swift */,
 				5BDF27AC2CD792A700598B0E /* 19951.swift */,
@@ -116,6 +120,7 @@
 		5B672DDF2C65C57400DB330C = {
 			isa = PBXGroup;
 			children = (
+				5B803B842D25864500A2BC15 /* 그리디 */,
 				5BE184E12CD84EA200DB5A11 /* 슬라이딩 윈도우 */,
 				5B878AD82CC5D92000955740 /* 투 포인터 */,
 				5B29CF0F2CBDEBF50055EC6D /* 누적합 */,
@@ -147,6 +152,15 @@
 			);
 			name = "이진탐색";
 			path = "이진탐색";
+			sourceTree = "<group>";
+		};
+		5B803B842D25864500A2BC15 /* 그리디 */ = {
+			isa = PBXGroup;
+			children = (
+				5B803B882D25878800A2BC15 /* 2839.swift */,
+			);
+			name = "그리디";
+			path = "그리디";
 			sourceTree = "<group>";
 		};
 		5B878AD82CC5D92000955740 /* 투 포인터 */ = {
@@ -269,6 +283,7 @@
 				5B29CF0E2CBDEBA40055EC6D /* 2023.swift in Sources */,
 				5B37F0682CD2374A008EAEEE /* 21921.swift in Sources */,
 				5B878ADA2CC5D93100955740 /* 3273.swift in Sources */,
+				5B6E51872D23DF5A00299771 /* 3020.swift in Sources */,
 				5B70D3592CAAB32400012A25 /* 2805.swift in Sources */,
 				5BE184E32CD84EC000DB5A11 /* 24499.swift in Sources */,
 				5BE184E02CD8497100DB5A11 /* 5549.swift in Sources */,
