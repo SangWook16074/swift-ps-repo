@@ -32,6 +32,7 @@
 		5BE184E02CD8497100DB5A11 /* 5549.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE184DF2CD8497100DB5A11 /* 5549.swift */; };
 		5BE184E32CD84EC000DB5A11 /* 24499.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE184E22CD84EC000DB5A11 /* 24499.swift */; };
 		5BE3D2C52CAB76F000F89D4C /* 2110.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE3D2C42CAB76F000F89D4C /* 2110.swift */; };
+		5BF535A92D28D9DE003D0E96 /* 2143.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF535A82D28D9CF003D0E96 /* 2143.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -74,6 +75,7 @@
 		5BE184DF2CD8497100DB5A11 /* 5549.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5549.swift; sourceTree = "<group>"; };
 		5BE184E22CD84EC000DB5A11 /* 24499.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 24499.swift; sourceTree = "<group>"; };
 		5BE3D2C42CAB76F000F89D4C /* 2110.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2110.swift; sourceTree = "<group>"; };
+		5BF535A82D28D9CF003D0E96 /* 2143.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2143.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		5B29CF0F2CBDEBF50055EC6D /* 누적합 */ = {
 			isa = PBXGroup;
 			children = (
+				5BF535A82D28D9CF003D0E96 /* 2143.swift */,
 				5B6E51862D23DF5700299771 /* 3020.swift */,
 				5B29CF102CBDEC050055EC6D /* 16507.swift */,
 				5BE05D132CD39F6F008C6725 /* 13900.swift */,
@@ -273,6 +276,7 @@
 				5B02661D2C99602D0094E205 /* 16234.swift in Sources */,
 				5B29CF112CBDEC050055EC6D /* 16507.swift in Sources */,
 				5B710CF12C917D7700236D32 /* 14502.swift in Sources */,
+				5BF535A92D28D9DE003D0E96 /* 2143.swift in Sources */,
 				5B710CEF2C91184400236D32 /* 17413.swift in Sources */,
 				5BE3D2C52CAB76F000F89D4C /* 2110.swift in Sources */,
 				5BE05D142CD39F6F008C6725 /* 13900.swift in Sources */,
