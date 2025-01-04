@@ -70,7 +70,6 @@ func solution_2143() {
     let b = (1 ... m).map { _ in fileIO.readInt() }
 
     var aSum = [Int:Int]()
-    var bSum = [Int:Int]()
     for i in 0 ..< n {
         var sum = 0
         for j in i ..< n {
@@ -82,22 +81,14 @@ func solution_2143() {
             }
         }
     }
-
+    var ans = 0
     for i in 0 ..< m {
         var sum = 0
         for j in i ..< m {
             sum += b[j]
-            if bSum[sum] == nil {
-                bSum[sum] = 1
-            } else {
-                bSum[sum]! += 1
-            }
+            guard let aValue = aSum[t - sum] else {continue}
+            ans += aValue
         }
-    }
-    var ans = 0
-    for (aKey, aValue) in aSum {
-        guard let bValue = bSum[t - aKey] else { continue }
-        ans += aValue * bValue
     }
     print(ans)
 }
