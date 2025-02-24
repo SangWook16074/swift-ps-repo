@@ -70,25 +70,27 @@ struct Heap<T : Comparable> {
     }
 }
 
-var minHeap = Heap<Int>(compare: <)
-var maxHeap = Heap<Int>(compare: >)
-var tmp = [Int]()
-let n = Int(readLine()!)!
-var ans = ""
-for _ in 0 ..< n {
-    let num = Int(readLine()!)!
-    if minHeap.count == maxHeap.count {
-        maxHeap.enqueue(num)
-    } else {
-        minHeap.enqueue(num)
+func solution_1655() {
+    var minHeap = Heap<Int>(compare: <)
+    var maxHeap = Heap<Int>(compare: >)
+    var tmp = [Int]()
+    let n = Int(readLine()!)!
+    var ans = ""
+    for _ in 0 ..< n {
+        let num = Int(readLine()!)!
+        if minHeap.count == maxHeap.count {
+            maxHeap.enqueue(num)
+        } else {
+            minHeap.enqueue(num)
+        }
+        
+        if !minHeap.isEmpty && maxHeap.first > minHeap.first {
+            let maxValue = maxHeap.dequeue()!, minValue = minHeap.dequeue()!
+            minHeap.enqueue(maxValue)
+            maxHeap.enqueue(minValue)
+        }
+        
+        ans += "\(maxHeap.first)\n"
     }
-    
-    if !minHeap.isEmpty && maxHeap.first > minHeap.first {
-        let maxValue = maxHeap.dequeue()!, minValue = minHeap.dequeue()!
-        minHeap.enqueue(maxValue)
-        maxHeap.enqueue(minValue)
-    }
-    
-    ans += "\(maxHeap.first)\n"
+    print(ans)
 }
-print(ans)

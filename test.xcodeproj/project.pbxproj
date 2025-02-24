@@ -75,6 +75,7 @@
 		5B878AD92CC5D93100955740 /* 3273.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3273.swift; sourceTree = "<group>"; };
 		5BAA25812D6225AE00DEEBEC /* 2493.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2493.swift; sourceTree = "<group>"; };
 		5BABA3FC2D6C6DB60002BB25 /* 1715.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1715.swift; sourceTree = "<group>"; };
+		5BABA3FF2D6C78560002BB25 /* 1655.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1655.swift; sourceTree = "<group>"; };
 		5BAC27AC2CA1567B002686C3 /* 1916.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1916.swift; sourceTree = "<group>"; };
 		5BAD09042CAE17C00018E52C /* 2343.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2343.swift; sourceTree = "<group>"; };
 		5BB358032CD1B545005A01AB /* 2230.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2230.swift; sourceTree = "<group>"; };
@@ -155,6 +156,7 @@
 		5B672DDF2C65C57400DB330C = {
 			isa = PBXGroup;
 			children = (
+				5BABA3FE2D6C78510002BB25 /* 자료구조 */,
 				5BAA25802D6225A400DEEBEC /* 스택 */,
 				5BC6D3E12D5F025E003F6990 /* 수학 */,
 				5B28618B2D55E1410002404A /* 최단경로 */,
@@ -221,6 +223,15 @@
 			);
 			name = "스택";
 			path = "스택";
+			sourceTree = "<group>";
+		};
+		5BABA3FE2D6C78510002BB25 /* 자료구조 */ = {
+			isa = PBXGroup;
+			children = (
+				5BABA3FF2D6C78560002BB25 /* 1655.swift */,
+			);
+			name = "자료구조";
+			path = "자료구조";
 			sourceTree = "<group>";
 		};
 		5BC45F962C8E771F00995DE5 /* 구현 */ = {
