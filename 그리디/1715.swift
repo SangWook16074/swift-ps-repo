@@ -70,18 +70,21 @@ extension Heap {
         self.compare = (<)
     }
 }
-var minHeap = Heap<Int>()
-let n = Int(readLine()!)!
-(1 ... n).forEach { _ in
-    let card = Int(readLine()!)!
-    minHeap.enqueue(card)
+
+func solution_1715() {
+    var minHeap = Heap<Int>()
+    let n = Int(readLine()!)!
+    (1 ... n).forEach { _ in
+        let card = Int(readLine()!)!
+        minHeap.enqueue(card)
+    }
+    var ans = 0
+    while minHeap.count > 1 {
+        let first = minHeap.dequeue()!
+        let second = minHeap.dequeue()!
+        let cnt = first + second
+        ans += cnt
+        minHeap.enqueue(cnt)
+    }
+    print(ans)
 }
-var ans = 0
-while minHeap.count > 1 {
-    let first = minHeap.dequeue()!
-    let second = minHeap.dequeue()!
-    let cnt = first + second
-    ans += cnt
-    minHeap.enqueue(cnt)
-}
-print(ans)
