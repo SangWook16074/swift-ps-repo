@@ -84,31 +84,33 @@ struct Jam : Comparable {
     }
 }
 
-let input = readLine()!.split(separator: " ").map { Int(String($0))! }
-let n = input[0], k = input[1]
-let jams : [Jam] = (1 ... n)
-    .map { _ in
-        let input = readLine()!.split(separator: " ").map { Int(String($0))! }
-        let jam = Jam(input[0], input[1])
-        return jam
-    }
-    .sorted { $0.m < $1.m }
-let bags = (1 ... k).map { _ in Int(readLine()!)! }.sorted { $0 < $1 }
 extension Heap {
     init() {
         self.compare = (>)
     }
 }
 
-var maxHeap = Heap<Jam>()
-var ans = 0
-var jamIdx = 0
-for bag in bags {
-    while jamIdx < jams.count, jams[jamIdx].m <= bag {
-        maxHeap.enqueue(jams[jamIdx])
-        jamIdx += 1
+func solution_1202() {
+    let input = readLine()!.split(separator: " ").map { Int(String($0))! }
+    let n = input[0], k = input[1]
+    let jams : [Jam] = (1 ... n)
+        .map { _ in
+            let input = readLine()!.split(separator: " ").map { Int(String($0))! }
+            let jam = Jam(input[0], input[1])
+            return jam
+        }
+        .sorted { $0.m < $1.m }
+    let bags = (1 ... k).map { _ in Int(readLine()!)! }.sorted { $0 < $1 }
+    var maxHeap = Heap<Jam>()
+    var ans = 0
+    var jamIdx = 0
+    for bag in bags {
+        while jamIdx < jams.count, jams[jamIdx].m <= bag {
+            maxHeap.enqueue(jams[jamIdx])
+            jamIdx += 1
+        }
+        guard let jam = maxHeap.dequeue() else { continue }
+        ans += jam.v
     }
-    guard let jam = maxHeap.dequeue() else { continue }
-    ans += jam.v
+    print(ans)
 }
-print(ans)
