@@ -84,6 +84,7 @@
 		5B84646D2D9ADF2D00C76AD4 /* 2166.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2166.swift; sourceTree = "<group>"; };
 		5B878AD92CC5D93100955740 /* 3273.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3273.swift; sourceTree = "<group>"; };
 		5B8D0BC52D979E1D00C3293E /* 15684.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 15684.swift; sourceTree = "<group>"; };
+		5B8EB9FD2D9F614000AC6C5A /* 1005.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1005.swift; sourceTree = "<group>"; };
 		5B8FE01E2D9C498600E8455C /* 14003.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14003.swift; sourceTree = "<group>"; };
 		5BAA25812D6225AE00DEEBEC /* 2493.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2493.swift; sourceTree = "<group>"; };
 		5BABA3FC2D6C6DB60002BB25 /* 1715.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1715.swift; sourceTree = "<group>"; };
@@ -229,6 +230,7 @@
 		5B7155542D9EE27D0067026A /* 위상정렬 */ = {
 			isa = PBXGroup;
 			children = (
+				5B8EB9FD2D9F614000AC6C5A /* 1005.swift */,
 				5B7155552D9EE28C0067026A /* 2252.swift */,
 			);
 			name = "위상정렬";
