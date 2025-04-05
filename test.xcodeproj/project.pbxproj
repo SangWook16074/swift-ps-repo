@@ -66,6 +66,7 @@
 		5B6414AC2D50C86600F6D18A /* 2504.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2504.swift; sourceTree = "<group>"; };
 		5B6681A62D59E5D300390CB0 /* 1389.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1389.swift; sourceTree = "<group>"; };
 		5B672DE82C65C57400DB330C /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B67F9A42DA1778700B7D8B8 /* 1647.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1647.swift; sourceTree = "<group>"; };
 		5B6E51862D23DF5700299771 /* 3020.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3020.swift; sourceTree = "<group>"; };
 		5B70D3562CAAAF8C00012A25 /* 1920.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1920.swift; sourceTree = "<group>"; };
 		5B70D3582CAAB32400012A25 /* 2805.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2805.swift; sourceTree = "<group>"; };
@@ -231,6 +232,7 @@
 		5B71554E2D9E42B90067026A /* MST */ = {
 			isa = PBXGroup;
 			children = (
+				5B67F9A42DA1778700B7D8B8 /* 1647.swift */,
 				5B71554F2D9E42C30067026A /* 1197.swift */,
 			);
 			path = MST;
