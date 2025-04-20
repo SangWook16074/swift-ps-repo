@@ -63,115 +63,126 @@ func solution_1753() {
         }
     }
 
-    struct Heap<T: Comparable> {
-        private var elements: [T] = []
-        private let comparer: (T, T) -> Bool
-        
-        var isEmpty: Bool {
-            return elements.count <= 1
-        }
-        
-        var top: T? {
-            return isEmpty ? nil : elements[1]
-        }
-        
-        init(comparer: @escaping (T,T) -> Bool) {
-            self.comparer = comparer
-        }
-        
-        mutating func insert(_ element: T) {
-            if elements.isEmpty {
-                elements.append(element)
-                elements.append(element)
-                return
-            }
-            elements.append(element)
-            swimUp(index: elements.count - 1)
-        }
-        
-        mutating private func swimUp(index: Int) {
-            var index = index
-            while index > 1 && comparer(elements[index], elements[index / 2]) {
-                elements.swapAt(index, index / 2)
-                index /= 2
-            }
-        }
-        
-        mutating func pop() -> T? {
-            if elements.count < 2 { return nil }
-            elements.swapAt(1, elements.count - 1)
-            let deletedElement = elements.removeLast()
-            diveDown(index: 1)
-            return deletedElement
-        }
-        
-        mutating private func diveDown(index: Int) {
-            var swapIndex = index
-            var isSwap = false
-            let leftIndex = index * 2
-            let rightIndex = index * 2 + 1
 
-            if leftIndex < elements.endIndex && comparer(elements[leftIndex], elements[swapIndex]) {
-                swapIndex = leftIndex
-                isSwap = true
+    struct Heap<T: Comparable> {
+        private var data : [T] = []
+        private let compare : (T, T) -> Bool
+        
+        init(_ compare: @escaping (T, T) -> Bool) {
+            self.compare = compare
+        }
+        
+        var isEmpty : Bool {
+            return data.isEmpty
+        }
+        
+        var count: Int {
+            return data.count
+        }
+        
+        mutating func enqueue(_ element : T) {
+            data.append(element)
+            siftUp(from: data.count - 1)
+        }
+        
+        mutating func dequeue() -> T? {
+            guard !data.isEmpty else { return nil }
+            if data.count == 1 { return data.removeLast() }
+            let root = data[0]
+            data[0] = data.removeLast()
+            siftDown(from: 0)
+            return root
+        }
+        
+        mutating func siftUp(from index: Int) {
+            var childIndex = index
+            let child = data[childIndex]
+            var parentIndex = (childIndex - 1) / 2
+            
+            while childIndex > 0 && compare(child, data[parentIndex]) {
+                data[childIndex] = data[parentIndex]
+                childIndex = parentIndex
+                parentIndex = (childIndex - 1) / 2
             }
             
-            if rightIndex < elements.endIndex && comparer(elements[rightIndex], elements[swapIndex]) {
-                swapIndex = rightIndex
-                isSwap = true
-            }
-
-            if isSwap {
-                elements.swapAt(swapIndex, index)
-                diveDown(index: swapIndex)
+            data[childIndex] = child
+        }
+        
+        mutating func siftDown(from index : Int) {
+            var parentIndex = index
+            let count = data.count
+            while true {
+                let leftChildIndex = 2 * parentIndex + 1
+                let rightChildIndex = 2 * parentIndex + 2
+                var swapIndex = parentIndex
+                
+                if leftChildIndex < count && compare(data[leftChildIndex], data[swapIndex]) {
+                    swapIndex = leftChildIndex
+                }
+                
+                if rightChildIndex < count && compare(data[rightChildIndex], data[swapIndex]) {
+                    swapIndex = rightChildIndex
+                }
+                
+                if swapIndex == parentIndex { break }
+                
+                data.swapAt(swapIndex, parentIndex)
+                parentIndex = swapIndex
             }
         }
     }
 
-    extension Heap {
-        init() {
-            self.comparer = (<)
-        }
-    }
-
-    struct Edge : Comparable {
+    struct Vector : Comparable {
         let v : Int
         let w : Int
         
-        static func < (lhs : Edge, rhs : Edge) -> Bool {
+        init(v : Int, w: Int) {
+            self.v = v
+            self.w = w
+        }
+        
+        static func <(lhs: Vector, rhs : Vector) -> Bool {
             return lhs.w < rhs.w
         }
     }
 
     let fio = FileIO()
-    let v = fio.readInt(), e = fio.readInt()
-    let k = fio.readInt()
-    var graph = [[(Int, Int)]](repeating: [(Int, Int)](), count: v + 1)
+
+    let v = fio.readInt(), e = fio.readInt(), k = fio.readInt()
+
+    var graph = [[Vector]](repeating: [Vector](), count: v + 1)
     let INF = Int.max
     var dist = [Int](repeating: INF, count: v + 1)
+
     for _ in 0 ..< e {
         let u = fio.readInt(), v = fio.readInt(), w = fio.readInt()
-        graph[u].append((v, w))
+        let vector = Vector(v: v, w: w)
+        graph[u].append(vector)
     }
 
-    func dijkstra(at start : Int) {
+    extension Heap {
+        init() {
+            compare = (<)
+        }
+    }
+
+    func dijkstra(at start: Int) {
         dist[start] = 0
-        var heapq = Heap<Edge>()
-        heapq.insert(Edge(v: start, w: 0))
-        while !heapq.isEmpty {
-            guard let now = heapq.pop() else { break }
+        var heap = Heap<Vector>()
+        heap.enqueue(Vector(v: start, w: 0))
+        
+        while !heap.isEmpty {
+            guard let now = heap.dequeue() else { break }
             if dist[now.v] < now.w { continue }
-            
-            for (v, w) in graph[now.v] {
-                let cost = w + now.w
-                if cost < dist[v] {
-                    dist[v] = cost
-                    heapq.insert(Edge(v: v, w: cost))
+            for next in graph[now.v] {
+                let cost = next.w + now.w
+                if cost < dist[next.v] {
+                    dist[next.v] = cost
+                    heap.enqueue(Vector(v: next.v, w: cost))
                 }
             }
         }
     }
-
     dijkstra(at: k)
     for i in 1 ... v {
         print(dist[i] == INF ? "INF" : dist[i])
