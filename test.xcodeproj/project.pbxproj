@@ -132,6 +132,7 @@
 		5BE184DF2CD8497100DB5A11 /* 5549.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5549.swift; sourceTree = "<group>"; };
 		5BE184E22CD84EC000DB5A11 /* 24499.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 24499.swift; sourceTree = "<group>"; };
 		5BE3D2C42CAB76F000F89D4C /* 2110.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2110.swift; sourceTree = "<group>"; };
+		5BE5FE512E8A06E100969F93 /* 1251.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1251.swift; sourceTree = "<group>"; };
 		5BF00A342DB21C020021E2EF /* 6497.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 6497.swift; sourceTree = "<group>"; };
 		5BF00A352DB2319D0021E2EF /* 17472.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17472.swift; sourceTree = "<group>"; };
 		5BF37FF92DA226A400AA7CFC /* 12865.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 12865.swift; sourceTree = "<group>"; };
@@ -223,6 +224,7 @@
 		5B672DDF2C65C57400DB330C = {
 			isa = PBXGroup;
 			children = (
+				5BE5FE502E8A06D900969F93 /* 문자열 */,
 				5B7155542D9EE27D0067026A /* 위상정렬 */,
 				5B71554E2D9E42B90067026A /* MST */,
 				5BABA3FE2D6C78510002BB25 /* 자료구조 */,
@@ -371,6 +373,15 @@
 			);
 			name = "슬라이딩 윈도우";
 			path = "슬라이딩 윈도우";
+			sourceTree = "<group>";
+		};
+		5BE5FE502E8A06D900969F93 /* 문자열 */ = {
+			isa = PBXGroup;
+			children = (
+				5BE5FE512E8A06E100969F93 /* 1251.swift */,
+			);
+			name = "문자열";
+			path = "문자열";
 			sourceTree = "<group>";
 		};
 		5BFEE6D92CA0EB2200579E2A /* 그래프이론 */ = {
